@@ -18,7 +18,7 @@ func CalcSquare(sideLen float64, sidesNum customInt) float64 {
 	} else if sidesNum == SidesSquare {
 		result = sideLen * sideLen
 	} else if sidesNum == SidesTriangle {
-		result = sideLen * sideLen / 2
+		result = math.Sqrt(3) * sideLen * sideLen / 4
 	}
 
 	return result
